@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ body > section#rappersView{
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+ }
+
+ body > section#rappersView > h1{
+    text-align: center;
+    color: #DD2476;
+    font-weight: bold;
+    font-size: 35px;
+ }
+
+
+ul.rappers{
+    display: block;
+    list-style: none;
+    margin: 20px;
+    position: relative;
+}
+
+ul.rappers li{
+    padding: 5px;
+}
+
+span{
+    font-size: 15px;
+    font-weight: bold;
+    color: #FF128f;
+}
+
+
+.fa-solid{
+    font-size: 20px;
+    color: cornflowerblue;
+    padding: 5px;
+    
+}
+
+#rapperUpdate{
+    margin-left: 30%;
+}
+
+.likes{
+    color:gold;
+    font-size:20px;
+}
+
+
+/* SECTION TW0 */
+
+#userInput{
+    box-shadow: 2px 2px 4px 5px #ccc;
+    width: 50%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 3px 5px 10px 5px;
+    
+}
+
+#userInput input{
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 5px;
+    border: 1px solid #DD2476 ;
+}
+
+
+#userInput button{
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+}

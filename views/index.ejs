@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/12ee7a4134.js" crossorigin="anonymous"></script>
     <title>ADD AND VIEW YOUR FAVOURITE MUSICIAN</title>
 </head>
 <body>
-    <h1>Current Musicians</h1>
-    <ul class="rappers">
-    <% for(let i = 0; i < info.length; i++) { %>
-        <li class="rapper">
-            <span><%= info[i].stageName %></span>
-            <span><%= info[i].birthName %></span>
-            <span><%= info[i].likes %></span>
-            <span class="fa-solid fa-thumbs-up"></span>
-            <span class="fa-solid fa-delete-left" id="deleteRap"></span>
-        </li>
+    <section id="rappersView">
+        <h1>Current Musicians</h1>
+        <ul class="rappers">
+        <% for(let i = 0; i < info.length; i++) { %>
+            <li class="rapper">
+                <span><%= info[i].stageName %></span>
+                <span><%= info[i].birthName %></span>
+                <span class="likes"><%= info[i].likes %></span>
+                <span id="rapperUpdate" class="fa-solid fa-thumbs-up"></span>
+                <span class="fa-solid fa-delete-left" id="deleteRap"></span>
+            </li>
     <% } %>
     </ul>
+    </section>
     
-    <section>
+    
+    <section id="userInput">
         <form action="/addMusician" method="POST">
             <input type="text" placeholder="Enter The Rapper rapName" name="rapName">
             <input type="text" placeholder="Enter Rapper birthName" name="birthName">
