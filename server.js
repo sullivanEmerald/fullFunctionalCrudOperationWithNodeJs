@@ -8,7 +8,7 @@ require('dotenv').config()
 // INSTALLING MONGODB AND CONNECTING TO DATABASE
 
 let db,
-    connectionString = process.env.DB_STRING
+    connectionString = process.env.DB_STRING,
     dbName = 'star-wars'
 
     MongoClient.connect(connectionString)
